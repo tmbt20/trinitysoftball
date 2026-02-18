@@ -73,6 +73,7 @@ body, html {
 header {
     background-color: #5BEE0B;
     padding: 20px;
+    padding-top: calc(20px + env(safe-area-inset-top));
     align-items: center;
     gap: 32px;
     display: flex;
@@ -652,6 +653,14 @@ footer {
     .article-item {
     gap: 10px;
     max-width: 325px;
+    }
+
+    .articletextreal {
+        width: 95%;
+    }
+
+    .articleimagereal {
+    width: 280px
     }
 }
 

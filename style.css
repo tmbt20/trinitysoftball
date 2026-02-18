@@ -1,0 +1,669 @@
+/* ==========================================================================
+   BASIC
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 38px;
+    color: #1d1d22;
+    text-align: center;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    color: #1d1d22;
+    text-align: center;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #1d1d22;
+    text-align: center;
+    text-decoration: none;
+}
+
+h4 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #1d1d22;
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #828282;
+    text-decoration: none;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* ==========================================================================
+   HEADING
+   ========================================================================== */
+header {
+    background-color: #5BEE0B;
+    padding: 20px;
+    align-items: center;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #000000;
+    margin-bottom: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+nav a {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d9d9d9;
+}
+
+.treelogo {
+    content: url('Images/Logo.png');
+    height: 55px;
+    width: auto;
+}
+
+.treelogo:hover {
+    content: url('Images/Logohover.png');
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;  /* Increase this number */
+    margin-left: auto;
+}
+
+.socials a:hover img{
+    filter: brightness(0.85);
+}
+
+.socials img {
+        width: 25px;
+    }
+
+@media screen and (max-width: 600px) {
+    header {
+        gap: 16px;
+}
+    
+    nav {
+        gap: 15px;
+    }
+    
+    nav a {
+        font-size: 14px;
+    }
+
+    .treelogo {
+        height: 35px;
+    }
+
+    .socials {
+        gap: 8px;
+    }
+
+    .socials img {
+        width: 17px;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    background-color: #1d1d22;
+    padding: 30px;
+    align-items: center;
+    gap: 32px;
+    box-shadow: 0px 0px 2px #000000;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.span {
+    width: 100%;
+}
+
+.footerlogo {
+    width: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+    font-size: 8px;
+    }
+
+    .footerlogo {
+    width: 10px;
+    }
+}
+
+
+
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+.homelink a {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 38px;
+    color: #1d1d22;
+    text-align: center;
+    text-decoration: none;
+}
+
+.homelink a :hover {
+    color: #4c4c55;
+}
+
+
+
+   
+/* ==========================================================================
+   SCHEDULE
+   ========================================================================== */
+.schedulecontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+
+.schedule-item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+}
+
+.schedulebox {
+    background-color: #5BEE0B;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #b3b3b3, #9b9b9b, #bebebe) 1;
+    box-shadow: 0px 2px 8px #c4c4c4;
+    padding: 10px;
+    width: 430px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.schedulebox_disabled {
+    background-color: #bbbbbb;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #b3b3b3, #9b9b9b, #bebebe) 1;
+    box-shadow: 0px 2px 8px #c4c4c4;
+    padding: 10px;
+    width: 430px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.scheduledropdown {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #1d1d22;
+    border: 2px solid #5BEE0B;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.schedule-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.schedule-link:hover .schedulebox {
+    background-color: #44ae0c;
+}
+
+.schedule-link:hover .scheduletext {
+    color: #d9d9d9;
+}
+
+.schedule-link:hover .schedulelogo {
+    filter: brightness(0.85);
+}
+
+.schedule-link:hover .boxscore {
+    filter: brightness(0.85);
+}
+
+.schedule-link:hover .schedulelogoright {
+    filter: brightness(0.85);
+}
+
+.scheduleheader {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #1d1d22;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.schedulesubheader {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: .04em;
+    color: #1d1d22;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.scheduletext {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.boxscore {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.schedulelogo {
+    height: 80px;
+    width: auto;
+    margin-right: auto;
+}
+
+.schedulelogoright {
+    height: 80px;
+    width: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .schedule-item {
+    gap: 10px;
+    width: 375px;
+    }
+
+    .schedulesubheader {
+    font-size: 17px;
+    }
+
+    .schedulebox {
+    width: 325px;
+    gap: 32px;
+}
+
+.schedulebox_disabled {
+    width: 325px;
+    gap: 32px;
+}
+}
+
+
+
+
+/* ==========================================================================
+   STATS
+   ========================================================================== */
+.statstable {
+    border-collapse: collapse;
+    border: 1px solid #1d1d22;
+    margin: 0 auto;
+    width: 60%;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.statsth {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #1d1d22;
+    padding: 100px 200px;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid #1d1d22;
+}
+
+.statstd {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #1d1d22;
+    padding: 20px;
+    border: 1px solid #1d1d22;
+}
+
+.statslogo {
+    display: block;
+    margin: 0 auto;
+    width: 125px
+}
+
+.goback {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #5BEE0B;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.goback a {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #1d1d22;
+    text-decoration: none;
+}
+
+.goback :hover {
+    color: #d9d9d9;
+}
+
+@media screen and (max-width: 600px) {
+    .statstable {
+    width: 90%;
+    }
+
+    .goback a{
+    font-size: 13px;
+    }
+}
+
+
+
+/* ==========================================================================
+   ROSTER
+   ========================================================================== */
+.rostercontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+
+.roster-item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 215px;
+    outline: 3px solid #53d70c;
+    background: #53d70c;
+    justify-content: center;
+}
+
+.rosterimage {
+    max-width: 215px;
+}
+
+.rosterbox {
+    background-color: #5BEE0B;
+    padding: 10px;
+    width: 215px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+}
+
+.roster-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.roster-link:hover .rosterbox {
+    background-color: #44ae0c;
+}
+
+.roster-link:hover .rosterimage {
+    filter: brightness(0.85);
+}
+
+.roster-link:hover .rostername {
+    filter: brightness(0.85);
+}
+
+.roster-link:hover .rostertext {
+    filter: brightness(0.85);
+}
+
+.rostername {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.rostertext {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/* ==========================================================================
+   ARTICLES
+   ========================================================================== */
+.articlecontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+
+.article-item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+    width: 100%;
+    border: 4px solid;
+    border-image: linear-gradient(to right, #b3b3b3, #9b9b9b, #bebebe) 1;
+    background: #b1b1b1
+}
+
+.articleimage {
+    max-width: 430px;
+    width: 100%;
+}
+
+.articlebox {
+    background-color: #5BEE0B;
+    padding: 10px;
+    max-width: 430px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+}
+
+.article-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.article-link:hover .articlebox {
+    background-color: #44ae0c;
+}
+
+.article-link:hover .articleimage {
+    filter: brightness(0.85);
+}
+
+.article-link:hover .articlename {
+    filter: brightness(0.85);
+}
+
+.article-link:hover .articletext {
+    filter: brightness(0.85);
+}
+
+.articlename {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.articletext {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.articleimagereal {
+    display: block;
+    margin: 0 auto;
+    width: 400px
+}
+
+.articletextreal {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #1d1d22;
+    text-align: center;
+    text-decoration: none;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 35px;
+}
+
+@media screen and (max-width: 600px) {
+    .article-item {
+    gap: 10px;
+    max-width: 325px;
+    }
+}
+
+
+
+/* ==========================================================================
+   MISC
+   ========================================================================== */
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

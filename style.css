@@ -63,11 +63,16 @@ body, html {
     width: 100%;
     overflow-x: hidden;
     padding-top: env(safe-area-inset-top);
+    background-color: white;
 
 }
 
 footer {
     padding-bottom: env(safe-area-inset-bottom);
+}
+
+html {
+    background: linear-gradient(to bottom, #5BEE0B 50%, #1d1d22 50%);
 }
 
 

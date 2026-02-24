@@ -67,27 +67,6 @@ body {
     overflow-x: hidden;
 }
 
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: env(safe-area-inset-top);
-    background-color: #5BEE0B;
-    z-index: 9999;
-}
-
-body::after {
-    content: '';
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: env(safe-area-inset-bottom);
-    background-color: #1d1d22;
-    z-index: 9999;
-}
 
 footer {
     padding-bottom: env(safe-area-inset-bottom);

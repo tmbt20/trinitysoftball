@@ -76,6 +76,7 @@ html {
 
 main {
     flex: 1;
+    padding-top: 20px;
 }
 
 
@@ -84,16 +85,12 @@ main {
    ========================================================================== */
 header {
     background-color: #5BEE0B;
-    padding: 20px;
-    align-items: center;
-    gap: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 32px;
     box-shadow: 0px 0px 5px #000000;
-    padding-top: calc(20px + env(safe-area-inset-top));
-    padding-left: calc(20px + env(safe-area-inset-left));
-    padding-right: calc(20px + env(safe-area-inset-right));
+    padding: calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) 20px calc(20px + env(safe-area-inset-left));
 }
 
 nav {
@@ -190,7 +187,7 @@ footer {
     text-align: center;
     align-items: center;
     margin-top: auto;
-    padding-bottom: calc(30px + env(safe-area-inset-bottom));
+    padding: 30px calc(30px + env(safe-area-inset-right)) calc(30px + env(safe-area-inset-bottom)) calc(30px + env(safe-area-inset-left));
 }
 
 .span {

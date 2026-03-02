@@ -59,7 +59,7 @@ p {
 
 html {
     scroll-behavior: smooth;
-    background: linear-gradient(to bottom, #5BEE0B 3%, white 3%, white 97%, #1d1d22 97%);
+    background: linear-gradient(to bottom, #5BEE0B 0%, #5BEE0B 1%, white 1%, white 99%, #1d1d22 99%, #1d1d22 100%);
 }
 
 
@@ -71,6 +71,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to bottom, #5BEE0B 0%, #5BEE0B 1%, white 1%, white 99%, #1d1d22 99%, #1d1d22 100%);
 }
 
 main {
@@ -90,7 +91,6 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 0px 5px #000000;
-    padding-top: env(safe-area-inset-top + 20);
 }
 
 nav {
@@ -187,7 +187,6 @@ footer {
     text-align: center;
     align-items: center;
     margin-top: auto;
-    padding-bottom: env(safe-area-inset-bottom + 20);
 }
 
 .span {

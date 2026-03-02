@@ -57,6 +57,12 @@ p {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #5BEE0B 3%, white 3%, white 97%, #1d1d22 97%);
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -65,14 +71,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    background-color: white;
 }
-
-html {
-    scroll-behavior: smooth;
-    background-color: #5BEE0B;
-}
-
 
 main {
     flex: 1;

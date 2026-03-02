@@ -70,7 +70,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    background-color: #5BEE0B;
+    background-color: white;
     padding: env(safe-area-inset-bottom) env(safe-area-inset-top);
 }
 

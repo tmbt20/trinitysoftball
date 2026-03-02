@@ -57,11 +57,6 @@ p {
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    background-color: #5BEE0B;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -71,12 +66,17 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
-    padding: env(safe-area-inset-bottom) env(safe-area-inset-top);
+    padding: env(safe-area-inset-bottom) env(safe-area-inset-top)
 }
+
+html {
+    scroll-behavior: smooth;
+    background-color: #5BEE0B;
+}
+
 
 main {
     flex: 1;
-    padding-top: 20px;
 }
 
 
@@ -85,10 +85,12 @@ main {
    ========================================================================== */
 header {
     background-color: #5BEE0B;
+    padding: 20px;
+    align-items: center;
+    gap: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 32px;
     box-shadow: 0px 0px 5px #000000;
 }
 
@@ -186,6 +188,7 @@ footer {
     text-align: center;
     align-items: center;
     margin-top: auto;
+    padding-bottom: calc(30px + env(safe-area-inset-bottom));
 }
 
 .span {

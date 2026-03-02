@@ -66,6 +66,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    padding: env(safe-area-inset-bottom) env(safe-area-inset-top);
 }
 
 html {
@@ -90,7 +91,6 @@ header {
     justify-content: space-between;
     gap: 32px;
     box-shadow: 0px 0px 5px #000000;
-    padding: calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) 20px calc(20px + env(safe-area-inset-left));
 }
 
 nav {
@@ -187,7 +187,6 @@ footer {
     text-align: center;
     align-items: center;
     margin-top: auto;
-    padding: 30px calc(30px + env(safe-area-inset-right)) calc(30px + env(safe-area-inset-bottom)) calc(30px + env(safe-area-inset-left));
 }
 
 .span {

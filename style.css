@@ -57,7 +57,7 @@ p {
     text-decoration: none;
 }
 
-html, body {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -65,11 +65,14 @@ html, body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 html {
     scroll-behavior: smooth;
+    background-color: #5BEE0B;
 }
+
 
 main {
     flex: 1;

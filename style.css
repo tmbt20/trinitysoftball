@@ -464,6 +464,14 @@ footer {
     .goback a{
     font-size: 13px;
     }
+
+    .statstd {
+    font-size: 11px;
+    }
+
+    .statsth {
+    font-size: 11px;
+    }
 }
 
 

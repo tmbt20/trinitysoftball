@@ -235,7 +235,24 @@
 
         </div>
 
+        
+
         <br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <!------------------
+        GAMECHANGER SECTION
+        ------------------->
+        <h1 class="homelink">
+            <a href="https://web.gc.com/teams/174Yq8nY8pxg/2026-summer-trinity-softball" target="_blank"><u>GAMECHANGER:</u></a>
+        </h1>
+        
+        <div class="gamechanger">
+            <!-- Put this div wherever you want the widget to be embedded -->
+            <div id="gc-schedule-widget-q0cf"></div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
 
 
 
@@ -360,6 +377,15 @@
         Thanks for Your Support!
     </footer>
 
+    <!-- Put this before the closing </body> tag -->
+    <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+    <script>
+    window.GC.team.schedule.init({
+        target: "#gc-schedule-widget-q0cf",
+        widgetId: "161e0798-8ac5-4d94-980f-01f8cbfd6831",
+        maxVerticalGamesVisible: 3,
+    })
+</script>
 </body>
 
 </html>

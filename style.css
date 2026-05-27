@@ -137,7 +137,7 @@ nav a:hover {
         width: 25px;
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     header {
         gap: 16px;
 }
@@ -147,7 +147,7 @@ nav a:hover {
     }
     
     nav a {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .treelogo {
@@ -159,7 +159,18 @@ nav a:hover {
     }
 
     .socials img {
-        width: 17px;
+        width: 14px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .socials img {
+        width: 11px;
     }
 }
 

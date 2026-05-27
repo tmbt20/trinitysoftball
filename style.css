@@ -749,3 +749,14 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.youtube {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 380px;
+        height: 210px;
+    }
+}

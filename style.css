@@ -163,7 +163,7 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 420px) {
 
     nav a {
         font-size: 10px;

@@ -166,11 +166,11 @@ nav a:hover {
 @media screen and (max-width: 420px) {
 
     nav a {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .socials img {
-        width: 11px;
+        width: 12px;
     }
 }
 
